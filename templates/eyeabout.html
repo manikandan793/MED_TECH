@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED TECH</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">MED TECH</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/dect">Detection</a>
+            <a href="/dectx">Detection_CT</a>
+
+            <a href="/about">About</a>
+            <a href="/summarizer">Report Summarizer</a> <!-- New link to PDF summarizer -->
+            <a href="https://chatbot.page/66f6b9e648b2ba247e87d38f">Appointment Booking</a> <!-- New link for appointment booking -->
+        </div>
+    </nav>
+    <div class="container">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">MED TECH</text>
+            </symbol>
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+    </div>
+    <div class="disease-details">
+        <h2>Details of Diseases</h2>
+        <div class="disease-grid">
+            <div class="disease">
+                <div class="disease-img">
+                    <img src="static\img\cataract.jpg" alt="Cataract">
+                </div>
+                <div class="disease-desc">
+                    <h3>Cataract</h3>
+                    <p>A clouding of the lens in the eye that affects vision. Cataracts are very common in older people and can lead to blindness if untreated.</p>
+                </div>
+            </div>
+            <div class="disease">
+                <div class="disease-img">
+                    <img src="static\img\glaucoma.jpg" alt="Glaucoma">
+                </div>
+                <div class="disease-desc">
+                    <h3>Glaucoma</h3>
+                    <p>A group of eye conditions that damage the optic nerve, often due to high eye pressure. Glaucoma can lead to blindness if not treated.</p>
+                </div>
+            </div>
+            <div class="disease">
+                <div class="disease-img">
+                    <img src="static\img\diabetic_retino.jpeg" alt="Diabetic Retinopathy">
+                </div>
+                <div class="disease-desc">
+                    <h3>Diabetic Retinopathy</h3>
+                    <p>A diabetes complication that affects the eyes, caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina).</p>
+                </div>
+            </div>
+            <div class="disease">
+                <div class="disease-img">
+                    <img src="static\img\normal.jpg" alt="Normal Eye">
+                </div>
+                <div class="disease-desc">
+                    <h3>Normal Eye</h3>
+                    <p>Indicates a healthy eye with no signs of disease or abnormality.</p>
+                </div>
+            </div>
+        </div>
+        <a href="/indexeye" id="predict" >Go to Detection</a>
+    </div>
+</body>
+</html>

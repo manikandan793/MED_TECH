@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MED TECH</title>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">MED TECH</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/dect">Detection</a>
+            <a href="/dectx">Detection_CT</a>
+
+            <a href="/about">About</a>
+            <a href="/summarizer">Report Summarizer</a> <!-- New link to PDF summarizer -->
+            <a href="https://chatbot.page/66f6b9e648b2ba247e87d38f">Appointment Booking</a> <!-- New link for appointment booking -->
+        </div>
+    </nav>
+    <div class="container">
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+                <text text-anchor="middle" x="50%" y="80%">MED TECH</text>
+            </symbol>
+            <g class="g-ants">
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+                <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+        </svg>
+    </div>
+    <div class="cont">
+        <div class="opt1">
+            <div class="containerr">
+                <form action='/result_eye' method='POST' enctype='multipart/form-data'>
+                    <br>
+                    <div class="img-area" data-img="">
+                        <i class='bx bxs-cloud-upload icon'></i>
+                        <h3>Upload Image</h3>
+                        <p>Image size must be less than <span>2MB</span></p>
+                    </div>
+                    <input type='file' name='input_image' id="choose">
+                    <br>
+                    <br>
+                    <input type='submit' value='Detect' id="predict">
+                </form>
+            </div>
+        </div>
+        <div class="opt1">
+            <div class="containerr">
+                <div class="img-area" data-img="">
+                    <img src="/static/{{ img_path }}">
+                </div>
+                <br>
+                <div class="box">
+                    <div class="skill-box">
+                        <div class="skill-box"></div>
+                    </div>
+                </div>
+                <div class="result">Given  Image is <span>{{ output }}</span></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

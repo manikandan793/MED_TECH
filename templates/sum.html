@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Summarizer</title>
+    <link rel="stylesheet" href="/static/css/sum.css"><!-- Link to external CSS -->
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">MED TECH</a>
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/dect">Detection</a>
+            <a href="/dectx">Detection_CT</a>
+            <a href="/about">About</a>
+            <a href="/summarizer">Report Summarizer</a> <!-- New link to PDF summarizer -->
+            <a href="https://chatbot.page/66f6b9e648b2ba247e87d38f">Appointment Booking</a> <!-- New link for appointment booking -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>PDF Summarizer</h1>
+
+        <!-- Form for PDF summarization -->
+        <form action="/summarize" method="POST" enctype="multipart/form-data">
+            <label for="pdf">Upload PDF file for summarization:</label>
+            <input type="file" id="pdf" name="pdf" accept="application/pdf" required>
+            <button type="submit">Summarize and Download PDF</button>
+        </form>
+    </div>
+</body>
+</html>
